@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="supplement, testosterone, wellness">
+    <title>GTEST</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/GTest-logo.png">
+</head>
+<body class="body-submain">
+    
+    
+    
+    <nav>
+        <div class="nav-img">
+            <a href="index.html">
+                <img src="images/GTest-logo.png" alt="">
+            </a>
+        </div>
+        <ul id="menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </div>
+    </nav>
+
+    <div class="delivery-successfull submit-message">Your order has been received. Look your email for additional information.</div>
+    <div class="invalid-data submit-message">Please enter valid data for your order!</div>
+
+    <section class="cart-main">
+        <form id="orderForm">
+            <h1 class="cart-heading">Information</h1>
+            <div class="cart-flex">
+                <div class="cart-div">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="cart-div">
+                    <label for="confirmEmail">Confirm Email</label>
+                    <input type="text" name="confirmEmail" id="confirmEmail">
+                </div>
+            </div>
+            <div class="cart-line"></div>
+            <h2 class="cart-heading">Shipping Address</h2>
+            <div class="cart-flex">
+                <div class="cart-div">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div class="cart-div">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+            </div>
+            <div class="cart-div cart-div-helper">
+                <label for="country">Country/Region</label>
+                <input type="text" name="country" id="country">
+            </div>
+            <div class="cart-div cart-div-helper">
+                <label for="town">Town/City</label>
+                <input type="text" name="town" id="town">
+            </div>
+            <div class="cart-div cart-div-helper">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="cart-div cart-div-helper">
+                <label for="shippingAddress">Shipping Address</label>
+                <input type="text" name="shippingAddress" id="shippingAddress">
+            </div>
+            <div class="cart-line"></div>
+            <h3 class="cart-heading">Payment information - cash on delivery</h3>
+            <div class="cart-div">
+                <button type="submit" id="submitForm">Buy Now</button>
+            </div>
+        </form>
+        <div class="cart-information">
+            <p>Order Summary</p>
+            <div class="cart-product-div">
+                <div class="cart-product-div-helper">
+                    <img src="images/GTEST-supplement.png" alt="">
+                    <div class="cart-product-div-middle">
+                        <p>GTEST</p>
+                        <div class="quantity-div">
+                            <div class="quantity-minus quantity-icon" onclick="quantityDecrease()">
+                                <ion-icon name="remove-circle-outline"></ion-icon>
+                            </div>
+                            <p id="quantity-p">1</p>
+                            <div class="quantity-plus quantity-icon" onclick="quantityIncrease()">
+                                <ion-icon name="add-circle-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span>$60</span>
+            </div>
+            <div class="cart-information-div">
+                <p>Subtotal</p>
+                <span id="subtotal">$60</span>
+            </div>
+            <div class="cart-information-div">
+                <p>Shipping</p>
+                <span>$10</span>
+            </div>
+            <div class="cart-information-div">
+                <p>Total</p>
+                <span id="total">$70</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="images/GTest-logo.png" alt="">
+            </a>
+        </div>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
